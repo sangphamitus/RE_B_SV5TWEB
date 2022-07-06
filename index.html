@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+    <title>WEBSITE BÌNH CHỌN (RE-BUILD)</title>
+    <link rel="stylesheet" href="style.css" type="text/css" >
+   <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+</head>
+<body>
+    <nav id="nav" class="navbar fixed-top">
+        <div class="container">
+            <div class="navbar-header d-flex flex-row justify-content-between">
+                <div class="navbar-brand" >
+                    <img src="./img_src/logo-rebuild.png" alt="Logo" width="auto" height="100px" style="border-radius:50px">
+                    <a style="font-weight: 1000;" href="">WEBSITE REBUILD</a>
+                </div>
+                <div id="full-nav" class="pull-right my-auto mx-0">
+                <ul class="d-flex list-unstyled flex-row m-0">
+                    <li > <a href="#hero">Home</a></li>
+                    <li ><a href="#sec2">Contestant</a></li>
+                    <li ><a href="#sec4">Vote</a></li>
+                    <li ><a href="#bottom">Contact</a></li>
+                </ul>
+                 </div>
+                <button id="menubutt" type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target="#myNav">
+                    <i style="color: #fff;"class="fa fa-bars fa-2x"></i>
+                </button>
+            
+                   
+            </div>
+            <div id="myNav" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav justify-content-between">
+                    <li><a href="#hero">Home</a></li>
+                    <li ><a href="#sec2">Contestant</a></li>
+                    <li ><a href="#sec4">Vote</a></li>
+                    <li ><a href="#bottom">Contact</a></li>
+                </ul>
+              
+            </div>
+        </div>
+    </nav> 
+
+        <section id="hero" class="full-screen-section">
+            <div class="cell-mid">
+                <div class="section-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <img src="https://via.placeholder.com/200x300.png?text=RE+BUILD" id="faceOne" class="img-max hidden-xs hidden-sm">
+                            </div>
+                            <div class="col">
+                                 <img src="https://via.placeholder.com/200x300.png?text=RE+BUILD" id="faceTwo" class="img-max hidden-xs hidden-sm">
+                            </div>
+                            <div class="col">
+                                <img src="https://via.placeholder.com/200x300.png?text=RE+BUILD" id="faceThree" class="img-max hidden-xs hidden-sm"></div>
+                               
+                           
+                            <div class="col">
+                                  <img src="https://via.placeholder.com/200x300.png?text=RE+BUILD" id="faceFour" class="img-max hidden-xs hidden-sm"></div>
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="sec2" class="full-screen-section">
+            <div class="container ">
+                <h1 id="clock-disp" class="mt-5">00:00:00</h1>
+                
+            </div>
+            <br/>
+            <div id="filter">
+                 <form style="border:2px solid black; border-radius: 10%;" class="p-2" >
+                    <fieldset class="p-3">
+                        <div class="row">
+                    <label class="col">Name: </label>
+                    <select class="col" name="name-cons" id="name-cons">
+                       <option value="all">all</option>
+                    </select>
+                    </div>
+                    <br>
+                    <div class="row">
+                    <label class="col" >Language: </label>
+                    <select class="col" name="lang-cons" id="lang-cons">
+                        <option value="all">all</option>
+                     </select>
+                    </div>
+                     <br>
+                     <div class="row">
+                     <label class="col">After year: </label>
+                     <input class="col" type="number" placeholder="input year" id="year-cons" value="0" />
+                    </div>
+                     <br>
+                    </fieldset>
+                    <div class=" p-2 m-1">
+                    <button class="d-grid m-auto" type="button" onclick="getSearch()" >Search</button>
+                    </div>
+                </form>
+              
+            </div>
+            <br>
+                <div id="display-content-1" class="display-content" >
+                    <div id="content-1" class="row m-0 w-100" > </div>
+                </div>
+        </section>
+        <div style="border:2px solid dimgray;"></div>
+        <section id="sec3" class="full-screen-section">
+            <div id="display-content-2" class="display-content">
+                <div id="content-2" class="row m-0 w-100">
+
+                </div>
+            </div>
+        </section>
+        <div style="border:2px solid dimgray;"></div>
+        <section id="sec4" class="full-screen-section p-2">
+            <div class="container">
+               <div>
+                <h1 class="text-center">Lorem, ipsum dolor.</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse maiores blanditiis quis vel velit explicabo ex cum quos odit dolores? Consequuntur nisi aspernatur qui quaerat distinctio. Eum voluptate quis corporis?</p>
+               
+               </div>
+              
+            </div>
+            <div class="p-5">
+                <button id="sub" type="button" > Go voting</button>
+
+                </div>
+        </section>
+  
+<footer id="bottom">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0" nonce="RESeAZJj"></script>
+    <div class="d-grid align-items-center bg-black bg-opacity-50  text-white ">
+                
+      <div >
+            <div >
+                <p class="m-0 text-center fs-5 fw-bold ">REBUILD WEBSITE</p>
+                <p class="m-0 text-center fs-2">from rebuild project for learning</p>
+            </div>
+            <div class="card-group">
+                <div class="card bg-black bg-opacity-50 border-0 align-content-center p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, laboriosam provident. </div>
+                <div class="card bg-black bg-opacity-50 border-0 align-content-center p-3">rebuild project by <a href="https://github.com/sangphamitus" style="text-decoration: none;" >sangphamitus</a></div>
+                <div class="card bg-black bg-opacity-50 border-0 align-content-center p-3">
+                    <div class="fb-page" 
+                    data-href="https://www.facebook.com/TuTuongHCH/"
+                    data-width="100" 
+                    data-hide-cover="false"
+                    data-show-facepile="false"></div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+   
+</footer>
+    
+</body> 
+
+<!--Script-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="/script.js" type="text/javascript"></script>
+<script src="/data.js" type="text/javascript"></script>
+<script src="/jquery.loadTemplate.min.js" type="text/javascript"></script>
+</html>
